@@ -20,7 +20,7 @@ $(document).ready(function() {
         doc.setFontSize(12);
         doc.text(`Número de Cuenta: ${numeroCuenta}`, 20, 40);
         doc.text(`Número referencia: ${numeroReferencia}`, 20, 50);
-        doc.text(`Monto Depositado: ${montoRetiro}`, 20, 60);
+        doc.text(`Monto Retirado: ${montoRetiro}`, 20, 60);
         doc.text(`Saldo actual: ${montoSaldo}`, 20, 70);
         doc.text(`Fecha: ${fechaRetiro}`, 20, 80);
 
