@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<!-- ----- CONFIGURACION DE LA PAGINA WEB ----- -->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta charset="UTF-8" />
+		
+		<!-- ----- ICON & NAME PAGE ----- -->
+		<title>Home</title>
+		<link rel="SHORTCUT ICON" href="media/image/Page_icon.ico">
+		
+		<!-- ----- PLUGINS ----- -->
+		<!-- JQuery -->
+		<script src="plugins/jquery/jquery-3.7.1.js"></script>
+		
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.css">
+		<script src="plugins/bootstrap/js/bootstrap.js"></script>
+		
+		<!-- Fontawesome -->
+		<link rel="stylesheet" href="plugins/fontawesome/css/all.css">
+		<script src="plugins/fontawesome/js/all.js"></script>
+		
+		<!-- ChartJS -->
+		<script src="plugins/Chart.js/chart.umd.js"></script>
+		
+		<!-- jsPDF -->
+		<script src="plugins/jsPDF/dist/jspdf.min.js"></script>
+		
+		<!-- SweetAlert -->
+		<link rel="stylesheet" href="plugins/sweetalert/sweetalert2.css">
+		<script src="plugins/sweetalert/sweetalert2.js"></script>
+		
+		<!-- Validate -->
+		<script src="plugins/validatejs/validate.js"></script>
+		
+		<!-- DataTables -->
+		<link rel="stylesheet" href="plugins/dataTables/datatables.min.css">
+		<link rel="stylesheet" href="plugins/dataTables/dataTables.bootstrap5.css">
+		<script src="plugins/dataTables/dataTables.js"></script>
+		<script src="plugins/dataTables/dataTables.bootstrap5.js"></script>
+		
+		<!-- PERSONALIZACIONES CSS/JS -->
+		<link rel="stylesheet" href="css/depositar.css">
+		<script src="js/depositar.js"></script>
+		
+	</head>
+	
+	<body>
+		<section class="jumbotron text-center bg-light py-5">
+			<div class="container">
+				<h2 class="jumbotron-heading">Bienvenido a Ash Ketchup</h2>
+			</div>
+    	</section>
+    	
+    	<div class="container-fluid mb-5">
+    	
+    		<div class="row justify-content-center">
+	        	<div class="col-md-6 col-12">
+	            	<div class="card shadow-lg">
+	                	<div class="card-header bg-primary text-white text-center">
+	                    	<h4>Depósito</h4>
+	                    </div>
+	                    <div class="card-body">
+	                        <form id="depositoFormulario" action="depositarConfirmacion.html">
+	                        	<div class="row mb-3">
+	                        		<div class="col-12">
+	                        			<label for="cuenta" class="form-label">Número de cuenta</label>
+	                        			<select id="cuenta" name="cuenta" class="form-control" required>
+	                        				<option disabled>Seleccione una cuenta</option>
+	                        				<option value="1">Cuenta de Ahorros</option>
+	                        				<option value="2">Cuenta de Plazos</option>
+	                        			</select>
+	                        		</div>
+	                        	</div>
+	                        	<div class="row mb-3">
+	                        		<div class="col-12">
+	                        			<label for="depositoMonto" class="form-label">Monto a depositar</label>
+	                        			<input type="number" class="form-control" id="depositoMonto" min="1" step="1" max="999" required>
+	                        		</div>
+	                        	</div>
+	                            <div class="row mb-3">
+	                        		<div class="col-6">
+	                        			<a href="home.html" class="btn btn-danger btn-block">Cancelar</a>
+	                        		</div>
+	                        		<div class="col-6">
+	                        			<button type="submit" class="btn btn-success btn-block">Confirmar Depósito</button>
+	                        		</div>
+	                        	</div>
+	                        </form>
+	                    </div>
+	                    <div class="card-footer text-center">
+	                        <small class="text-muted">Por favor, revise su información antes de confirmar.</small>
+	                    </div>
+	                </div>
+	            </div>
+        	</div>
+    
+    	</div>
+    	
+    	<footer class="footer fixed-bottom bg-dark">
+    		<div class="container text-center">
+    			<span class="text-muted">© 2024 The coding crew, Inc.</span>
+    		</div>
+    	</footer>
+	</body>
+</html>

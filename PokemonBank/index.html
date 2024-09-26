@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<!-- ----- CONFIGURACION DE LA PAGINA WEB ----- -->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta charset="UTF-8" />
+		
+		<!-- ----- ICON & NAME PAGE ----- -->
+		<title>PokemonBank - Login</title>
+		<link rel="SHORTCUT ICON" href="media/image/Page_icon.ico">
+		
+		<!-- ----- PLUGINS ----- -->
+		<!-- JQuery -->
+		<script src="plugins/jquery/jquery-3.7.1.js"></script>
+		
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.css">
+		<script src="plugins/bootstrap/js/bootstrap.js"></script>
+		
+		<!-- Fontawesome -->
+		<link rel="stylesheet" href="plugins/fontawesome/css/all.css">
+		<script src="plugins/fontawesome/js/all.js"></script>
+		
+		<!-- ChartJS -->
+		<script src="plugins/Chart.js/chart.umd.js"></script>
+		
+		<!-- jsPDF -->
+		<script src="plugins/jsPDF/dist/jspdf.min.js"></script>
+		
+		<!-- SweetAlert -->
+		<link rel="stylesheet" href="plugins/sweetalert/sweetalert2.css">
+		<script src="plugins/sweetalert/sweetalert2.js"></script>
+		
+		<!-- Validate -->
+		<script src="plugins/validatejs/validate.js"></script>
+		
+		<!-- DataTables -->
+		<link rel="stylesheet" href="plugins/dataTables/datatables.min.css">
+		<link rel="stylesheet" href="plugins/dataTables/dataTables.bootstrap5.css">
+		<script src="plugins/dataTables/dataTables.js"></script>
+		<script src="plugins/dataTables/dataTables.bootstrap5.js"></script>
+		
+		<!-- PERSONALIZACIONES CSS/JS -->
+		<link rel="stylesheet" href="css/index.css">
+		<script src="js/index.js"></script>
+		
+	</head>
+	
+	<body>
+		<div class="login-container">
+			<h3>Ingrese su PIN</h3>
+			<form id="loginPin" action="home.html">
+				<div class="mb-3">
+					<input type="text" class="form-control" id="codePin" name="codePin" minlength="4" maxlength="4" placeholder="••••" required>
+				</div>
+				<button type="submit" class="btn btn-primary w-100">Iniciar Sesión</button>
+			</form>
+		</div>
+	</body>
+</html>

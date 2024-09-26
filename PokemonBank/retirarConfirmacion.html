@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<!-- ----- CONFIGURACION DE LA PAGINA WEB ----- -->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta charset="UTF-8" />
+		
+		<!-- ----- ICON & NAME PAGE ----- -->
+		<title>Home</title>
+		<link rel="SHORTCUT ICON" href="media/image/Page_icon.ico">
+		
+		<!-- ----- PLUGINS ----- -->
+		<!-- JQuery -->
+		<script src="plugins/jquery/jquery-3.7.1.js"></script>
+		
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.css">
+		<script src="plugins/bootstrap/js/bootstrap.js"></script>
+		
+		<!-- Fontawesome -->
+		<link rel="stylesheet" href="plugins/fontawesome/css/all.css">
+		<script src="plugins/fontawesome/js/all.js"></script>
+		
+		<!-- ChartJS -->
+		<script src="plugins/Chart.js/chart.umd.js"></script>
+		
+		<!-- jsPDF -->
+		<script src="plugins/jsPDF/jspdf.umd.min.js"></script>
+		<script src="plugins/jsPDF/jspdf.plugin.autotable.min.js"></script>
+		
+		
+		<!-- SweetAlert -->
+		<link rel="stylesheet" href="plugins/sweetalert/sweetalert2.css">
+		<script src="plugins/sweetalert/sweetalert2.js"></script>
+		
+		<!-- Validate -->
+		<script src="plugins/validatejs/validate.js"></script>
+		
+		<!-- DataTables -->
+		<link rel="stylesheet" href="plugins/dataTables/datatables.min.css">
+		<link rel="stylesheet" href="plugins/dataTables/dataTables.bootstrap5.css">
+		<script src="plugins/dataTables/dataTables.js"></script>
+		<script src="plugins/dataTables/dataTables.bootstrap5.js"></script>
+		
+		<!-- PERSONALIZACIONES CSS/JS -->
+		<link rel="stylesheet" href="css/retirarConfirmacion.css">
+		<script src="js/retirarConfirmacion.js"></script>
+		
+	</head>
+	
+	<body>
+		<section class="jumbotron text-center bg-light py-5">
+			<div class="container">
+				<h2 class="jumbotron-heading">Bienvenido a Ash Ketchup</h2>
+			</div>
+    	</section>
+    	
+    	<div class="container-fluid mb-5">
+    	
+    		<div class="row justify-content-center">
+    			<div class="col-md-6 col-12">
+    				<div class="card shadow-lg">
+    					<div class="card-header bg-success text-white text-center">
+    						<h4>Retiro Confirmado</h4>
+    					</div>
+    					<div class="card-body">
+    						<h5 class="card-title mb-4 text-center">Detalles del Retiro</h5>
+    						<p class="card-text text-center">Su retiro ha sido procesado con éxito.</p>
+    						<div class="mb-3">
+    							<p><strong>Número de Cuenta:</strong> <span id="numeroCuenta">123456789</span></p>
+    							<p><strong>Número referencia:</strong> <span id="numeroReferencia">123456789</span></p>
+    							<p><strong>Monto Retirado:</strong> <span id="montoRetiro">$100.00</span></p>
+    							<p><strong>Saldo actual:</strong> <span id="montoSaldo">$400.00</span></p>
+    							<p><strong>Fecha:</strong> <span id="fechaRetiro">24 de Septiembre, 2024</span></p>
+    						</div>
+    						
+    						<div class="row">
+    							<div class="col-6">
+    								<button class="btn btn-primary btn-block" onclick="window.location.href='home.html'">Finalizar</button>
+    							</div>
+    							<div class="col-6">
+    								<button class="btn btn-secondary btn-block" id="descargarComprobante">Descargar PDF</button>
+    							</div>
+    						</div>
+    					</div>
+    					<div class="card-footer text-center">
+    						<small class="text-muted">Gracias por usar nuestros servicios.</small>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    		
+    	</div>
+    	
+    	<footer class="footer fixed-bottom bg-dark">
+    		<div class="container text-center">
+    			<span class="text-muted">© 2024 The coding crew, Inc.</span>
+    		</div>
+    	</footer>
+	</body>
+</html>
